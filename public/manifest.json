@@ -1,0 +1,44 @@
+{
+  "id": "./",
+  "name": "Aventura do Gabriel",
+  "short_name": "Gabriel",
+  "description": "Jogo de aventura e plataforma 2D acolhedor, infinito e otimizado para celulares Android e iPhone.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "fullscreen"
+  ],
+  "orientation": "portrait",
+  "theme_color": "#0284c7",
+  "background_color": "#020617",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "./pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

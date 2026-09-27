@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Aventura do Gabriel</title>
+    <meta name="description" content="Jogo de plataforma 2D infinito, acolhedor e acessível, com o Gabriel explorando mundos coloridos com controles simples e divertidos." />
+    
+    <!-- PWA & Mobile Web App Meta Tags -->
+    <meta name="theme-color" content="#0284c7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Gabriel" />
+    <meta name="application-name" content="Aventura do Gabriel" />
+
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:title" content="Aventura do Gabriel" />
+    <meta property="og:description" content="Jogo de plataforma 2D infinito, acolhedor e acessível, com o Gabriel explorando mundos coloridos com controles simples e divertidos." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./icon-512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Icons & Manifest (Relative Paths) -->
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;800&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="overflow-hidden select-none bg-slate-950 text-white touch-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register Service Worker using relative path for standalone hosting
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./service-worker.js', { scope: './' })
+            .then(function(reg) {
+              console.log('PWA Service Worker registered:', reg.scope);
+            })
+            .catch(function(err) {
+              console.warn('SW registration skipped:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+

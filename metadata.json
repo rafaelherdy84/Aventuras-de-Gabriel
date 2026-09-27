@@ -1,0 +1,6 @@
+{
+  "name": "Aventura do Gabriel",
+  "description": "Jogo de plataforma 2D infinito, acolhedor e acessível, com o Gabriel explorando mundos coloridos com controles simples e divertidos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

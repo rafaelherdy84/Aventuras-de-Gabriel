@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Fredoka', 'Nunito', cursive, sans-serif;
+  }
+}
+
+@keyframes bounceSoft {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.04);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.4), 0 0 30px rgba(249, 115, 22, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.8), 0 0 45px rgba(249, 115, 22, 0.4);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes floatIndicator {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-soft {
+  animation: bounceSoft 1.4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.2s ease-in-out infinite;
+}
+
+.animate-float-prompt {
+  animation: floatIndicator 0.9s ease-in-out infinite;
+}
+

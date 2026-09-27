@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="favBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#favBg)" stroke="#facc15" stroke-width="3"/>
+  <ellipse cx="32" cy="32" rx="16" ry="16" fill="#fde047"/>
+  <ellipse cx="26" cy="30" rx="3" ry="4.5" fill="#18181b"/>
+  <ellipse cx="38" cy="30" rx="3" ry="4.5" fill="#18181b"/>
+  <circle cx="25" cy="28.5" r="1.2" fill="#ffffff"/>
+  <circle cx="37" cy="28.5" r="1.2" fill="#ffffff"/>
+  <path d="M 27 36 Q 32 41 37 36" stroke="#ef4444" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 16 28 C 14 14, 50 14, 48 28 C 45 20, 36 17, 32 17 C 28 17, 19 20, 16 28 Z" fill="#18181b"/>
+  <!-- Little Star -->
+  <polygon points="50,14 52,19 57,19 53,22 54,27 50,24 46,27 47,22 43,19 48,19" fill="#facc15"/>
+</svg>
